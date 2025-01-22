@@ -36,8 +36,141 @@
 			name="twitter:image"
 			content="https://raw.githubusercontent.com/alinbrg/front27-lesson10/refs/heads/main/images/1.jpg"
 		/>
+
+		<link rel="stylesheet" href="style.css" />
 	</head>
 	<body>
-		<h1>lesson 10</h1>
+		<header>
+			<div class="container">
+				<h1>lesson 10</h1>
+			</div>
+		</header>
+		<section>
+			<div class="container">
+				<h3>Form Tag</h3>
+				<form action="#">
+					<div class="input-wrapper">
+						<label for="user-firstname"> enter your name </label>
+						<input
+							type="text"
+							id="user-firstname"
+							name="user-name"
+							placeholder="enter your name"
+							required
+							maxlength="10"
+						/>
+					</div>
+
+					<div class="input-wrapper">
+						<label for="user-age"> enter your age </label>
+						<input
+							type="number"
+							id="user-age"
+							name="user-age"
+							placeholder="enter your age"
+							min="0"
+							max="20"
+						/>
+					</div>
+
+					<div class="input-wrapper">
+						<label for="user-email"> enter your email </label>
+						<input
+							type="email"
+							id="user-email"
+							name="user-email"
+							placeholder="enter your email"
+							required
+						/>
+					</div>
+
+					<div class="input-wrapper">
+						<label for="user-password"> enter your password </label>
+						<input
+							type="password"
+							id="user-password"
+							name="user-password"
+							placeholder="enter your password"
+							required
+						/>
+					</div>
+
+					<div class="input-wrapper">
+						<label for="user-image"> upload your image </label>
+						<input
+							type="file"
+							id="user-image"
+							name="user-image"
+							placeholder="enter your image"
+							multiple
+						/>
+					</div>
+
+					<div class="input-wrapper">
+						<label for="user-date"> choose your birthday </label>
+						<input
+							type="date"
+							id="user-date"
+							name="user-date"
+							placeholder="enter your date"
+						/>
+					</div>
+					<div class="input-wrapper">
+						<label for="user-color"> choose your color </label>
+						<input
+							type="color"
+							id="user-color"
+							name="user-color"
+							placeholder="enter your color"
+						/>
+					</div>
+
+					<div class="input-wrapper">
+						<h3>choose your gerder</h3>
+						<div>
+							<input type="radio" id="male" name="gerder" />
+							<label for="male">male</label>
+						</div>
+						<div>
+							<input type="radio" id="female" name="gerder" />
+							<label for="female">female</label>
+						</div>
+						<div>
+							<input type="radio" id="no" name="gerder" />
+							<label for="no">no</label>
+						</div>
+					</div>
+
+					<div class="input-wrapper">
+						<h3>read terms and conditions</h3>
+						<div>
+							<input type="checkbox" id="terms" name="terms" />
+							<label for="terms">terms</label>
+						</div>
+						<div>
+							<input type="checkbox" id="condition" name="condition" />
+							<label for="condition">condition</label>
+						</div>
+					</div>
+
+					<div class="input-wrapper">
+						<label for="user-message"> enter your message </label>
+						<textarea name="message" id="user-message"></textarea>
+					</div>
+					<div class="input-wrapper">
+						<label for="user-city">choose your city </label>
+						<select name="user-city" id="user-city">
+							<option value="" selected disabled>choose your city</option>
+							<option value="1">tbilisi</option>
+							<option value="2">rustavi</option>
+							<option value="3">batumi</option>
+							<option value="4">kutaisi</option>
+						</select>
+					</div>
+
+					<button type="submit">Submit</button>
+				</form>
+			</div>
+		</section>
 	</body>
 </html>
